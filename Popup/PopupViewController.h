@@ -2,8 +2,8 @@
 //  PopupViewController.h
 //  Popup
 //
-//  Created by MacMini on 6/19/17.
-//  Copyright © 2017 MacMini. All rights reserved.
+//  Created by Mohamad Sheikh on 6/19/17.
+//  Copyright © 2017 Mohamad Sheikh. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

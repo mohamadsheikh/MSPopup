@@ -295,7 +295,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Popup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fanap.Popup;
+				PRODUCT_BUNDLE_IDENTIFIER = ms.popup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -308,7 +308,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Popup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fanap.Popup;
+				PRODUCT_BUNDLE_IDENTIFIER = ms.popup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
