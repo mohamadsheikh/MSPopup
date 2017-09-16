@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANSans(FaNum).ttf">
+            <string>IRANSansFaNum</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupViewController">
+            <connections>
+                <outlet property="dismissBut" destination="tV0-3o-wxp" id="6Lo-MS-fNx"/>
+                <outlet property="textField" destination="dRu-l9-gwR" id="g1z-Cu-sFX"/>
+                <outlet property="textLabel" destination="AmP-Yh-7P3" id="uxV-es-U9k"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bSo-N4-8dH">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tV0-3o-wxp">
+                    <rect key="frame" x="0.0" y="105" width="290" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="VTV-ch-Km4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                    <state key="normal" title="باشه"/>
+                    <connections>
+                        <action selector="okBut:" destination="-1" eventType="touchUpInside" id="9gc-C3-9fL"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999403953552" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sj4-Zr-Szp">
+                    <rect key="frame" x="0.0" y="101" width="290" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="J4h-T6-evX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="بو نه مستونت بود" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="AmP-Yh-7P3">
+                    <rect key="frame" x="16" y="12" width="258" height="33"/>
+                    <fontDescription key="fontDescription" name="IRANSansFaNum" family="IRANSans(FaNum)" pointSize="16"/>
+                    <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dRu-l9-gwR">
+                    <rect key="frame" x="16" y="57" width="258" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="KnS-XV-sHZ"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dRu-l9-gwR" secondAttribute="trailing" constant="16" id="7nb-HO-JsU"/>
+                <constraint firstItem="Sj4-Zr-Szp" firstAttribute="leading" secondItem="bSo-N4-8dH" secondAttribute="leading" id="9ia-Kz-82O"/>
+                <constraint firstAttribute="trailing" secondItem="AmP-Yh-7P3" secondAttribute="trailing" constant="16" id="CoD-qs-dWg"/>
+                <constraint firstAttribute="trailing" secondItem="Sj4-Zr-Szp" secondAttribute="trailing" id="Sgx-SX-2Pj"/>
+                <constraint firstItem="tV0-3o-wxp" firstAttribute="leading" secondItem="bSo-N4-8dH" secondAttribute="leading" id="XbJ-Vu-gga"/>
+                <constraint firstItem="AmP-Yh-7P3" firstAttribute="top" secondItem="bSo-N4-8dH" secondAttribute="top" constant="12" id="bXy-KQ-yGy"/>
+                <constraint firstAttribute="bottom" secondItem="tV0-3o-wxp" secondAttribute="bottom" id="dZx-D2-8r2"/>
+                <constraint firstItem="tV0-3o-wxp" firstAttribute="top" secondItem="Sj4-Zr-Szp" secondAttribute="bottom" constant="3" id="hGm-ia-CHF"/>
+                <constraint firstItem="Sj4-Zr-Szp" firstAttribute="top" secondItem="dRu-l9-gwR" secondAttribute="bottom" constant="14" id="pzj-Ro-VRs"/>
+                <constraint firstItem="AmP-Yh-7P3" firstAttribute="leading" secondItem="bSo-N4-8dH" secondAttribute="leading" constant="16" id="sRr-Cl-t98"/>
+                <constraint firstAttribute="trailing" secondItem="tV0-3o-wxp" secondAttribute="trailing" id="vNx-hu-olS"/>
+                <constraint firstItem="dRu-l9-gwR" firstAttribute="leading" secondItem="bSo-N4-8dH" secondAttribute="leading" constant="16" id="yLf-Fi-QZd"/>
+                <constraint firstItem="dRu-l9-gwR" firstAttribute="top" secondItem="AmP-Yh-7P3" secondAttribute="bottom" constant="12" id="zfd-ZK-cH1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="1576" y="121.5"/>
+        </view>
+    </objects>
+</document>
