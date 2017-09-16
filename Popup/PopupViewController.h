@@ -16,7 +16,6 @@ typedef NS_OPTIONS(NSUInteger, MSAlertType) {
 };
 + (instancetype)initWithTitle:(NSString *)title message:(NSString *)message type:(MSAlertType)type;
 
-- (void)setTextFieldText:(NSString *)text;
 - (UITextField *)textField;
 - (void)setAlertFont:(UIFont *)font;
 - (void)setDismisalButtonTitle:(NSString *)title;
