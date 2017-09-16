@@ -20,6 +20,10 @@
     [self presentViewController:popup animated:YES completion:nil];
 }
 - (IBAction)messagePopup:(id)sender {
+    PopupViewController *popup = [PopupViewController initWithTitle:@"Lorem" message:@"Lorem ipsum dolor sit er elit lamet" type:Alert];
+    [popup setAlertFont:[UIFont fontWithName:@"IRANSans" size:18]];
+    [popup setDismisalButtonTitle:@"ok"];
+    [self presentViewController:popup animated:YES completion:nil];
 }
 
 @end
