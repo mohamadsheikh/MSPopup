@@ -13,10 +13,13 @@
 @end
 
 @implementation ViewController
-- (IBAction)showPopup:(id)sender {
-    PopupViewController *popup = [PopupViewController initWithTitle:@"" message:@"بو نه مستونت بود، فکر زمستونت بود؟" type:AlertWithTextField];
+- (IBAction)popupWithTextField:(id)sender {
+    PopupViewController *popup = [PopupViewController initWithTitle:@"Lorem" message:@"Lorem ipsum dolor sit er elit lamet" type:AlertWithTextField];
     [popup setAlertFont:[UIFont fontWithName:@"IRANSans" size:18]];
-    [popup setDismisalButtonTitle:@"بو نه"];
+    [popup setDismisalButtonTitle:@"ok"];
     [self presentViewController:popup animated:YES completion:nil];
 }
+- (IBAction)messagePopup:(id)sender {
+}
+
 @end
